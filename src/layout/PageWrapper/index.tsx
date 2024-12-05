@@ -6,7 +6,7 @@ const StyledPageWrapper = styled("div")`
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 const PageWrapperBody = styled("div")`
