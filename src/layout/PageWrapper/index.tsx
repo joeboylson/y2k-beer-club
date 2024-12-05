@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { WithChildren } from "../../types";
-import Tag from "../../components/Tag";
 
 const StyledPageWrapper = styled("div")`
   height: 100vh;
