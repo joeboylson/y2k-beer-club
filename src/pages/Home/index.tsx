@@ -2,6 +2,7 @@ import styled from "styled-components";
 import GridItem from "../../components/GridItem";
 import Grid from "../../components/Grid";
 import Details from "../../components/Details";
+import Tag from "../../components/Tag";
 
 const TitleSVG = styled.svg`
   padding-top: 48px;
@@ -12,6 +13,17 @@ const TitleText = styled.text`
   font-family: Anton;
   font-weight: 100;
   fill: #ff4003;
+`;
+
+const ContactBlock = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+
+  * {
+    text-align: center;
+    margin: 0 auto;
+  }
 `;
 
 export default function Home() {
@@ -49,10 +61,10 @@ export default function Home() {
          *
          *
          */}
-        <GridItem sizeL={3} sizeM={2}>
-          <h3>Why is it the "Y2K" Beer Club?</h3>
+        <GridItem sizeL={2} sizeM={3}>
+          <h3>Why is it "Y2K" Beer Club?</h3>
         </GridItem>
-        <GridItem sizeL={2} sizeM={1}>
+        <GridItem sizeL={3} sizeM={3}>
           <p>
             The Y2K Beer Club (Y2KBC) is for those born before or around the
             year 2000. Its for the later Millenials or the early GenZ - for the
@@ -65,10 +77,10 @@ export default function Home() {
          *
          *
          */}
-        <GridItem sizeL={3} sizeM={2}>
+        <GridItem sizeL={2} sizeM={3}>
           <h3>What is Y2K Beer Club?</h3>
         </GridItem>
-        <GridItem sizeL={2} sizeM={1}>
+        <GridItem sizeL={3} sizeM={3}>
           <p>
             Y2KBC is a fusion of a{" "}
             <a href="#mission-statement">mission statement</a> and a{" "}
@@ -82,10 +94,10 @@ export default function Home() {
          *
          *
          */}
-        <GridItem sizeL={3} sizeM={2}>
+        <GridItem sizeL={2} sizeM={3}>
           <h3 id="mission-statement">Mission Statement:</h3>
         </GridItem>
-        <GridItem sizeL={2} sizeM={1}>
+        <GridItem sizeL={3} sizeM={3}>
           <p>
             We have "social media", but less friends. We have "dating apps", but
             less relationships.
@@ -101,10 +113,10 @@ export default function Home() {
          *
          *
          */}
-        <GridItem sizeL={3} sizeM={2}>
-          <h3 id="mission-statement">Who's invited?</h3>
+        <GridItem sizeL={2} sizeM={3}>
+          <h3>Who's invited?</h3>
         </GridItem>
-        <GridItem sizeL={2} sizeM={1}>
+        <GridItem sizeL={3} sizeM={3}>
           <p>
             We're a group that has strong Social Conservative values -
             traditional family values, clear gender roles, and a strong belief
@@ -209,6 +221,27 @@ export default function Home() {
               ],
             ]}
           />
+        </GridItem>
+
+        {/**
+         *
+         *
+         *
+         */}
+        <GridItem sizeL={5} sizeM={3}>
+          <hr />
+        </GridItem>
+        {/**
+         *
+         *
+         *
+         */}
+        <GridItem sizeL={5} sizeM={3}>
+          <ContactBlock>
+            <code>Contact:</code>
+            <Tag>joeboylson@gmail.com</Tag>
+            <Tag>513-667-2371 (text only)</Tag>
+          </ContactBlock>
         </GridItem>
       </Grid>
     </>

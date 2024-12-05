@@ -10,6 +10,10 @@ const StyledTag = styled("div")`
   font-size: 12px;
   white-space: nowrap;
   font-family: "Azeret Mono", monospace;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 `;
 
 export default function Tag({ children }: WithChildren) {
