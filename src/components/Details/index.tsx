@@ -21,6 +21,8 @@ const StyledDetailsRow = styled("div")`
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px 0;
   }
 
   &:last-child {
