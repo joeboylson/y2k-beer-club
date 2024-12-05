@@ -34,7 +34,7 @@ h1 {
   font-weight: 700;
   font-family: Anton;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -43,7 +43,7 @@ h2 {
   font-weight: 700;
   font-family: Anton;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -52,7 +52,7 @@ h3 {
   font-weight: 700;
   font-family: Anton;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 code {

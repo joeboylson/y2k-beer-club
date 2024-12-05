@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import GridItem from "../../components/GridItem";
 import Grid from "../../components/Grid";
-import Details from "../../components/Details";
 import Tag from "../../components/Tag";
 import Events from "../../layout/Events";
 import { Helmet } from "react-helmet-async";
@@ -90,7 +89,7 @@ export default function Home() {
         <GridItem sizeL={3} sizeM={3}>
           <p>
             The Y2K Beer Club (Y2KBC) is for those born before or around the
-            year 2000—the later Millennials and early Gen Z. It’s an event for
+            year 2000 — the later Millennials and early Gen Z. It’s an event for
             the "Zoomers" or "Zillennials" who find themselves caught between
             two iconic generations.
           </p>
@@ -100,21 +99,7 @@ export default function Home() {
             individuals create a sense community around shared values.
           </p>
         </GridItem>
-        {/**
-         *
-         *
-         *
-         */}
-        {/* <GridItem sizeL={2} sizeM={3}>
-          <h3>What is Y2KBC?</h3>
-        </GridItem>
-        <GridItem sizeL={3} sizeM={3}>
-          <p>
-            Y2KBC is all about creating meaningful social connections. It’s a
-            blend of purpose and action: to bring our generation together, to
-            build community, and to enjoy good times with good people.
-          </p>
-        </GridItem> */}
+
         {/**
          *
          *
@@ -127,7 +112,7 @@ export default function Home() {
           <p>
             We live in a world with "social media" but fewer real friendships,
             and "dating apps" but fewer meaningful relationships. Our mission is
-            to help change that—at least a little—by hosting monthly events
+            to help change that — at least a little — by hosting monthly events
             where people can come together, connect, share a laugh, and enjoy a
             drink or two.
           </p>
