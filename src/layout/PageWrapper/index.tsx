@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { WithChildren } from "../../types";
 
 const StyledPageWrapper = styled("div")`
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   overflow: hidden;
@@ -10,7 +9,6 @@ const StyledPageWrapper = styled("div")`
 
 const PageWrapperBody = styled("div")`
   border-top: 1px solid #ddd;
-  height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 48px;

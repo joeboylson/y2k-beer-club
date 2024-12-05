@@ -1,6 +1,7 @@
 import { ShareNetwork } from "@phosphor-icons/react";
 import Details from "../../components/Details";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const ShareButton = styled.button`
   background-color: rgba(0, 0, 0, 0.1);
@@ -99,6 +100,18 @@ const events: Event[] = [
 ];
 
 export default function Events() {
+  useEffect(() => {
+    setTimeout(() => {
+      const hash = window.location.hash;
+
+      if (hash) {
+        const element = document.querySelector(hash);
+        const top = (element?.getBoundingClientRect()?.top ?? 0) - 10;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+    }, 500);
+  }, []);
+
   return (
     <>
       <EventsTitleWrapper>
@@ -110,7 +123,7 @@ export default function Events() {
         details={events.map((event) => {
           const { date, time, locationName, address } = event;
           const dateString = date.toLocaleDateString("en-US", eventFormat);
-          const _id = date.toDateString().toLowerCase().replaceAll(" ", "-");
+          const _id = date.toDateString().toLowerCase().replaceAll(" ", "");
 
           const isPassed = Date.now() > date.valueOf();
           const showPlaceAndAddress = !!locationName && !!address;
