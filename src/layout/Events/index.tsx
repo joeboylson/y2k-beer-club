@@ -114,8 +114,7 @@ export default function Events() {
 
           const isPassed = Date.now() > date.valueOf();
           const showPlaceAndAddress = !!locationName && !!address;
-          // const canShare = !!navigator.share;
-          const canShare = true;
+          const canShare = !!navigator.share;
 
           const _handleShare = () => {
             try {
