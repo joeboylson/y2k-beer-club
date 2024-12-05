@@ -4,6 +4,7 @@ import Grid from "../../components/Grid";
 import Details from "../../components/Details";
 import Tag from "../../components/Tag";
 import Events from "../../layout/Events";
+import { Helmet } from "react-helmet-async";
 
 const TitleSVG = styled.svg`
   padding-top: 48px;
@@ -14,6 +15,10 @@ const TitleText = styled.text`
   font-family: Anton;
   font-weight: 100;
   fill: #ff4003;
+`;
+
+const Subtitle = styled.h1`
+  text-align: center;
 `;
 
 const ContactBlock = styled.div`
@@ -33,6 +38,14 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>Y2KBC</title>
+        <meta
+          name="description"
+          content="Y2K Beer Club: Connect with fellow Millennials & Gen Z in Cincinnati. Find friends, share laughs, and have a couple drinks."
+        />
+        <link rel="canonical" href="/home" />
+      </Helmet>
       <TitleSVG
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
@@ -57,13 +70,22 @@ export default function Home() {
         <GridItem sizeL={5} sizeM={3}>
           <hr />
         </GridItem>
+
+        {/**
+         *
+         *
+         *
+         */}
+        <GridItem sizeL={5} sizeM={3}>
+          <Subtitle>Join us for a couple drinks!</Subtitle>
+        </GridItem>
         {/**
          *
          *
          *
          */}
         <GridItem sizeL={2} sizeM={3}>
-          <h3>Why is it "Y2K" Beer Club?</h3>
+          <h2>Why is it "Y2K" Beer Club?</h2>
         </GridItem>
         <GridItem sizeL={3} sizeM={3}>
           <p>
@@ -99,7 +121,7 @@ export default function Home() {
          *
          */}
         <GridItem sizeL={2} sizeM={3}>
-          <h3>Mission Statement:</h3>
+          <h2>Mission Statement:</h2>
         </GridItem>
         <GridItem sizeL={3} sizeM={3}>
           <p>
@@ -116,7 +138,7 @@ export default function Home() {
          *
          */}
         <GridItem sizeL={2} sizeM={3}>
-          <h3>Who's invited?</h3>
+          <h2>Who's invited?</h2>
         </GridItem>
         <GridItem sizeL={3} sizeM={3}>
           <p>
@@ -125,6 +147,14 @@ export default function Home() {
             events are 21+.
           </p>
           <p>If this sounds like you, you're invited!</p>
+        </GridItem>
+        {/**
+         *
+         *
+         *
+         */}
+        <GridItem sizeL={5} sizeM={3}>
+          <hr />
         </GridItem>
         {/**
          *

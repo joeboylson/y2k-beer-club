@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import PageWrapper from "./layout/PageWrapper";
 import Router from "./layout/Router";
+import { HelmetProvider } from "react-helmet-async";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -10,8 +11,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <PageWrapper>
-      <Router />
-    </PageWrapper>
+    <HelmetProvider>
+      <PageWrapper>
+        <Router />
+      </PageWrapper>
+    </HelmetProvider>
   </React.StrictMode>
 );
