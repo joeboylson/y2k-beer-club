@@ -6,7 +6,7 @@ export default function Grid({ children }: WithChildren) {
     width: calc(100% - (48px * 2));
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 48px;
+    gap: 100px  ;
     max-width: 1096px;
     margin: 0 auto;
     padding: 48px;

@@ -1,23 +1,15 @@
 import { Pages } from "../../enums";
-import Experience from "../../pages/Experience";
-import Profile from "../../pages/Profile";
-import Projects from "../../pages/Projects";
+import Home from "../../pages/Home";
 
 export default function Router() {
   const path = window.location.pathname;
 
   switch (path) {
-    case Pages.PROFILE:
-      return <Profile />;
-
-    case Pages.PROJECTS:
-      return <Projects />;
-
-    case Pages.EXPERIENCE:
-      return <Experience />;
+    case Pages.HOME:
+      return <Home />;
 
     default:
-      window.location.href = Pages.PROFILE;
+      window.location.href = Pages.HOME;
       return <span />;
   }
 }

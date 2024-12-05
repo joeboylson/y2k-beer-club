@@ -8,8 +8,8 @@ const StyledTag = styled("div")`
   padding: 0 8px;
   color: white;
   font-size: 12px;
-  font-family: Elios;
   white-space: nowrap;
+  font-family: "Azeret Mono", monospace;
 `;
 
 export default function Tag({ children }: WithChildren) {

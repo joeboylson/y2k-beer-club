@@ -10,7 +10,6 @@ export default function WithLabel({ children, label }: _props) {
     width: fit-content;
 
     &::after {
-      font-family: Elios;
       font-size: 12px;
       background-color: blue;
       color: white;
