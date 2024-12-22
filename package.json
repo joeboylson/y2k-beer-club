@@ -20,7 +20,7 @@
   "scripts": {
     "start": "env-cmd react-scripts start",
     "dev": "env-cmd npm run start",
-    "build": "env-cmd react-scripts build"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
