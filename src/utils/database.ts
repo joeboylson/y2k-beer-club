@@ -11,9 +11,9 @@ export type IDBError = {
   };
 };
 
-const REACT_APP_APP_ID = process.env.REACT_APP_APP_ID ?? "";
+const REACT_APP_INSTANTDB_ID = process.env.REACT_APP_INSTANTDB_ID ?? "";
 
-export const db = init({ appId: REACT_APP_APP_ID, devtool: false });
+export const db = init({ appId: REACT_APP_INSTANTDB_ID, devtool: false });
 
 export async function createNewUser(email: string, phone?: string) {
   const createdAt = new Date();
