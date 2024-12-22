@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { WithChildren } from "../../types";
+import Signup from "../Signup";
 
 const StyledPageWrapper = styled("div")`
   display: grid;
@@ -24,6 +25,7 @@ export default function PageWrapper({ children }: WithChildren) {
       <PageWrapperBody>
         {children}
         <PageBottomSpacer />
+        <Signup />
       </PageWrapperBody>
     </StyledPageWrapper>
   );

@@ -10,6 +10,7 @@ export default function Grid({ children }: WithChildren) {
     max-width: 1096px;
     margin: 0 auto;
     padding: 48px;
+    align-items: center;
 
     @media (max-width: 800px) {
       grid-template-columns: repeat(3, 1fr);

@@ -76,28 +76,7 @@ export default function Home() {
          *
          */}
         <GridItem sizeL={5} sizeM={3}>
-          <Subtitle>Join us for a couple drinks!</Subtitle>
-        </GridItem>
-        {/**
-         *
-         *
-         *
-         */}
-        <GridItem sizeL={2} sizeM={3}>
-          <h2>Why is it "Y2K" Beer Club?</h2>
-        </GridItem>
-        <GridItem sizeL={3} sizeM={3}>
-          <p>
-            The Y2K Beer Club (Y2KBC) is for those born before or around the
-            year 2000 — the later Millennials and early Gen Z. It’s an event for
-            the "Zoomers" or "Zillennials" who find themselves caught between
-            two iconic generations.
-          </p>
-          <p>
-            Many of us are realizing that making friends as adults isn't as easy
-            as it once was. Y2KBC wants to bring together like-minded
-            individuals create a sense community around shared values.
-          </p>
+          <Subtitle>Join us for drinks!</Subtitle>
         </GridItem>
 
         {/**
@@ -110,13 +89,31 @@ export default function Home() {
         </GridItem>
         <GridItem sizeL={3} sizeM={3}>
           <p>
-            We live in a world with "social media" but fewer real friendships,
-            and "dating apps" but fewer meaningful relationships. Our mission is
-            to help change that — at least a little — by hosting monthly events
-            where people can come together, connect, share a laugh, and enjoy a
-            drink or two.
+            To cultivate authentic human connection in a digitally-driven world
+            by creating a welcoming space where individuals can forge genuine
+            friendships and build meaningful relationships.
           </p>
         </GridItem>
+
+        {/**
+         *
+         *
+         *
+         */}
+        <GridItem sizeL={2} sizeM={3}>
+          <h2>Why is it "Y2K" Beer Club?</h2>
+        </GridItem>
+        <GridItem sizeL={3} sizeM={3}>
+          <p>
+            The Y2K Beer Club is for those born before the year 2000 — the late
+            Millennials, the early Gen Z, the "Zoomers", and the "Zillennials".
+            At this point in our lives, many of us are realizing that making
+            lasting friendships and relationships isn't easy. If you are a part
+            of this Y2K generation, this club is for you.
+          </p>
+          <p></p>
+        </GridItem>
+
         {/**
          *
          *
@@ -128,10 +125,10 @@ export default function Home() {
         <GridItem sizeL={3} sizeM={3}>
           <p>
             We're a community of like-minded individuals who share traditional
-            family values, clear gender roles, and a strong belief in God. All
-            events are 21+.
+            family values, clear gender roles, and a strong belief in God.
           </p>
           <p>If this sounds like you, you're invited!</p>
+          <Tag>All events are 21+</Tag>
         </GridItem>
         {/**
          *

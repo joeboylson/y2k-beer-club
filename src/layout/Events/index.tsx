@@ -2,6 +2,7 @@ import { ShareNetwork } from "@phosphor-icons/react";
 import Details from "../../components/Details";
 import styled from "styled-components";
 import { useEffect } from "react";
+import Tag from "../../components/Tag";
 
 const ShareButton = styled.button`
   background-color: rgba(0, 0, 0, 0.1);
@@ -22,6 +23,7 @@ const ShareButton = styled.button`
 const EventsTitleWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   padding-bottom: 48px;
 
   * {
@@ -116,7 +118,7 @@ export default function Events() {
     <>
       <EventsTitleWrapper>
         <h3>Monthly Events (2025)</h3>
-        <code>(2nd Friday of every month)</code>
+        <Tag>2nd Friday of every month</Tag>
       </EventsTitleWrapper>
 
       <Details
@@ -129,9 +131,9 @@ export default function Events() {
           const showPlaceAndAddress = !!locationName && !!address;
           const canShare = !!navigator.share;
 
-          const _handleShare = () => {
+          const _handleShare = async () => {
             try {
-              navigator.share({
+              await navigator.share({
                 url: `${window.location.href}#${_id}`,
                 text: `Y2KBC: ${dateString} - ${time} at ${address}`,
                 title: "You're invited to Y2K Beer Club!",
