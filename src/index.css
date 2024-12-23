@@ -65,6 +65,10 @@ input {
   border: 1px solid #ddd;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   * {
     font-size: 16px;

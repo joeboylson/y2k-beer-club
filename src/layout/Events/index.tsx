@@ -3,6 +3,7 @@ import Details from "../../components/Details";
 import styled from "styled-components";
 import { useEffect } from "react";
 import Tag from "../../components/Tag";
+import { events, generateICSFile } from "../../utils";
 
 const ShareButton = styled.button`
   background-color: rgba(0, 0, 0, 0.1);
@@ -35,71 +36,22 @@ const EventsTitleWrapper = styled.div`
   }
 `;
 
-type Event = {
-  date: Date;
-  time?: string;
-  locationName?: string;
-  address?: string;
-};
+const DownloadCalendarButton = styled.button`
+  width: fit-content;
+  margin: 24px auto;
+  background-color: #ff4003;
+  color: white;
+  padding: 8px 16px;
+  border: 0;
+  outline: none;
+  border-radius: 100px;
+`;
 
 const eventFormat: Intl.DateTimeFormatOptions = {
   weekday: "short",
   month: "long",
   day: "numeric",
 };
-
-const events: Event[] = [
-  {
-    date: new Date("01/10/2025"),
-    time: "7PM",
-    locationName: "Big Ash Brewing",
-    address: "5230 Beechmont Ave, Cincinnati, OH 45230",
-  },
-  {
-    date: new Date("02/14/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("03/14/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("04/11/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("05/09/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("06/13/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("07/11/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("08/08/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("09/12/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("10/10/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("11/14/2025"),
-    time: "7PM",
-  },
-  {
-    date: new Date("12/12/2025"),
-    time: "7PM",
-  },
-];
 
 export default function Events() {
   useEffect(() => {
@@ -120,6 +72,10 @@ export default function Events() {
         <h3>Monthly Events (2025)</h3>
         <Tag>2nd Friday of every month</Tag>
       </EventsTitleWrapper>
+
+      <DownloadCalendarButton onClick={generateICSFile}>
+        Download Calendar
+      </DownloadCalendarButton>
 
       <Details
         details={events.map((event) => {
