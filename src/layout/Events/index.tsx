@@ -79,11 +79,12 @@ export default function Events() {
 
       <Details
         details={events.map((event) => {
-          const { date, time, locationName, address } = event;
+          const { date, time, locationName, address, canceledReason } = event;
           const dateString = date.toLocaleDateString("en-US", eventFormat);
           const _id = date.toDateString().toLowerCase().replaceAll(" ", "");
 
           const isPassed = Date.now() > date.valueOf();
+          const isCanceled = !!event.canceledReason;
           const showPlaceAndAddress = !!locationName && !!address;
           const canShare = !!navigator.share;
 
@@ -99,8 +100,11 @@ export default function Events() {
             }
           };
 
-          if (isPassed) {
-            return [dateString, <code>[Passed]</code>];
+          if (isPassed || isCanceled) {
+            return [
+              dateString,
+              <code>{isCanceled ? canceledReason : `[Passed]`}</code>,
+            ];
           }
 
           return [

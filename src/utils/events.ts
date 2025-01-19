@@ -7,10 +7,19 @@ export const events: Y2KEvent[] = [
     time: "7PM",
     locationName: "Big Ash Brewing",
     address: "5230 Beechmont Ave, Cincinnati, OH 45230",
+    canceledReason: "[Canceled due to weather]",
+  },
+  {
+    date: new Date("01/24/2025"),
+    time: "7PM",
+    locationName: "Big Ash Brewing",
+    address: "5230 Beechmont Ave, Cincinnati, OH 45230",
   },
   {
     date: new Date("02/14/2025"),
     time: "7PM",
+    locationName: "Fabled Brew Works",
+    address: "331 Kenton Lands Rd Suite 300, Erlanger, KY 41018",
   },
   {
     date: new Date("03/14/2025"),

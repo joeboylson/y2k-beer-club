@@ -3,4 +3,5 @@ export type Y2KEvent = {
   time: string;
   locationName?: string;
   address?: string;
+  canceledReason?: string;
 };
