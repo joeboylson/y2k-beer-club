@@ -24,10 +24,14 @@ export const events: Y2KEvent[] = [
   {
     date: new Date("03/14/2025"),
     time: "7PM",
+    locationName: "HighGrain Taproom & Kitchen",
+    address: "6860 Plainfield Rd, Cincinnati, OH 45236",
   },
   {
     date: new Date("04/11/2025"),
     time: "7PM",
+    locationName: "MadTree Parks & Rec + Event Spaces",
+    address: "4321 Glendale Milford Rd, Blue Ash, OH 45242",
   },
   {
     date: new Date("05/09/2025"),
