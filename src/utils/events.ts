@@ -26,6 +26,13 @@ export const events: Y2KEvent[] = [
     time: "7PM",
     locationName: "HighGrain Taproom & Kitchen",
     address: "6860 Plainfield Rd, Cincinnati, OH 45236",
+    canceledReason: "[rescheduling to Sunday (03/16)]",
+  },
+  {
+    date: new Date("03/16/2025"),
+    time: "7PM",
+    locationName: "HighGrain Taproom & Kitchen",
+    address: "6860 Plainfield Rd, Cincinnati, OH 45236",
   },
   {
     date: new Date("04/11/2025"),
