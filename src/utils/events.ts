@@ -35,7 +35,7 @@ export const events: Y2KEvent[] = [
     address: "6860 Plainfield Rd, Cincinnati, OH 45236",
   },
   {
-    date: new Date("04/11/2025"),
+    date: new Date("04/13/2025"),
     time: "7PM",
     locationName: "MadTree Parks & Rec + Event Spaces",
     address: "4321 Glendale Milford Rd, Blue Ash, OH 45242",
