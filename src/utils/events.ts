@@ -43,26 +43,38 @@ export const events: Y2KEvent[] = [
   {
     date: new Date("05/09/2025"),
     time: "7PM",
+    locationName: "Vinoklet Winery & Restaurant",
+    address: "11069 Colerain Ave, Cincinnati, OH 45252",
   },
   {
     date: new Date("06/13/2025"),
     time: "7PM",
+    locationName: "Braxton Brewing Company",
+    address: "27 W 7th St, Covington, KY 41011",
   },
   {
     date: new Date("07/11/2025"),
     time: "7PM",
+    locationName: "Fretboard Brewing (Factory 52)",
+    address: "2750 Park Ave Suite O, Norwood, OH 45212",
   },
   {
     date: new Date("08/08/2025"),
     time: "7PM",
+    locationName: "Dead Low Brewing",
+    address: "5959 Kellogg Ave, Cincinnati, OH 45230",
   },
   {
     date: new Date("09/12/2025"),
+    locationName: "Braxton Brewing Company",
+    address: "8901 US-42, Union, KY 41091",
     time: "7PM",
   },
   {
     date: new Date("10/10/2025"),
     time: "7PM",
+    locationName: "Hofbräuhaus",
+    address: "200 3rd St, Newport, KY 41071",
   },
   {
     date: new Date("11/14/2025"),

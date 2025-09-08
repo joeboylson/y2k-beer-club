@@ -100,20 +100,22 @@ export default function Events() {
             }
           };
 
-          if (isPassed || isCanceled) {
+          if (isCanceled) {
             return [
-              dateString,
-              <code>{isCanceled ? canceledReason : `[Passed]`}</code>,
+              <p className={isPassed ? "passed" : ""}>{dateString}</p>,
+              <code className={isPassed ? "passed" : ""}>
+                {isCanceled && canceledReason}
+              </code>,
             ];
           }
 
           return [
-            <div>
+            <div className={isPassed ? "passed" : ""}>
               <p>
                 {dateString} @ {time}
               </p>
             </div>,
-            <div id={_id}>
+            <div id={_id} className={isPassed ? "passed" : ""}>
               {showPlaceAndAddress ? (
                 <>
                   <p>

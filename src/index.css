@@ -90,7 +90,13 @@ button {
     line-height: calc(21px * 1.3);
   }
 
-  code, input {
+  code,
+  input {
     font-size: 12px;
   }
+}
+
+.passed {
+  opacity: 0.25;
+  cursor: not-allowed;
 }
