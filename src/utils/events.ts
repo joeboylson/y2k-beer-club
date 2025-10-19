@@ -71,10 +71,10 @@ export const events: Y2KEvent[] = [
     time: "7PM",
   },
   {
-    date: new Date("10/10/2025"),
+    date: new Date("10/24/2025"),
     time: "7PM",
-    locationName: "Hofbräuhaus",
-    address: "200 3rd St, Newport, KY 41071",
+    locationName: "Third Eye Brewing Company",
+    address: "11276 Chester Rd, Cincinnati, OH 45246",
   },
   {
     date: new Date("11/14/2025"),
