@@ -79,10 +79,14 @@ export const events: Y2KEvent[] = [
   {
     date: new Date("11/14/2025"),
     time: "7PM",
+    locationName: "Streetside Brewery",
+    address: "4003 Eastern Ave, Cincinnati, OH 45226"
   },
   {
     date: new Date("12/12/2025"),
     time: "7PM",
+    locationName: "MadTree Brewing (Oakley)",
+    address: "3301 Madison Rd, Cincinnati, OH 45209"
   },
 ];
 
