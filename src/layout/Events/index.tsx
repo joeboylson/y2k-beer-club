@@ -6,7 +6,7 @@ import Tag from "../../components/Tag";
 import { events, generateICSFile } from "../../utils";
 
 const ShareButton = styled.button`
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--color-text-light);
   border: 0;
   outline: none;
   height: 24px;
@@ -39,8 +39,8 @@ const EventsTitleWrapper = styled.div`
 const DownloadCalendarButton = styled.button`
   width: fit-content;
   margin: 24px auto;
-  background-color: #ff4003;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   padding: 8px 16px;
   border: 0;
   outline: none;
@@ -69,8 +69,8 @@ export default function Events() {
   return (
     <>
       <EventsTitleWrapper>
-        <h3>Monthly Events (2025)</h3>
-        <Tag>2nd Friday of every month</Tag>
+        <h3>Monthly Events (2026)</h3>
+        <Tag>2nd/3rd Friday of every month</Tag>
       </EventsTitleWrapper>
 
       <DownloadCalendarButton onClick={generateICSFile}>

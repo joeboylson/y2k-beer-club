@@ -9,15 +9,15 @@ const SignupFloatingButton = styled.button`
   position: fixed;
   bottom: 48px;
   right: 48px;
-  background-color: #ff4003;
+  background-color: var(--color-primary);
   cursor: pointer;
-  color: white;
+  color: var(--color-white);
   padding: 0 36px;
   border: none;
   border-radius: 64px;
   font-size: 34px;
   height: 64px;
-  border: 2px solid white;
+  border: 2px solid var(--color-white);
 
   box-shadow: 0.3px 0.5px 0.7px rgba(0, 0, 0, 0.34),
     1.5px 2.9px 3.7px -0.4px rgba(0, 0, 0, 0.34),
@@ -45,7 +45,7 @@ const ModalBackdrop = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--color-text-overlay);
   display: grid;
   place-items: center;
   z-index: 999;
@@ -65,7 +65,7 @@ const ModalBackdrop = styled.div`
 
 const ModalContent = styled.div`
   position: relative;
-  background: white;
+  background: var(--color-white);
   margin: 12px;
   padding: 24px;
   width: calc(100% - 24px - 48px);
@@ -152,7 +152,7 @@ export default function Signup() {
         <ModalBackdrop onClick={handleClickAway} data-clickaway>
           <ModalContent>
             <CloseButton onClick={closeModal}>
-              <X size={24} color="#ff4003" weight="bold" />
+              <X size={24} color="var(--color-primary)" weight="bold" />
             </CloseButton>
             {isSubmitSuccess && <SignupSuccess />}
             {!isSubmitSuccess && <SignupForm onSubmit={submitSignup} />}

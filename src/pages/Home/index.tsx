@@ -13,7 +13,7 @@ const TitleText = styled.text`
   font-size: 16px;
   font-family: Anton;
   font-weight: 100;
-  fill: #ff4003;
+  fill: var(--color-primary);
 `;
 
 const Subtitle = styled.h1`

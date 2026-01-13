@@ -1,87 +1,67 @@
 import { v4 as uuidv4 } from "uuid";
 import { Y2KEvent } from "../types";
 
+// Previous event locations:
+// January: Big Ash Brewing - 5230 Beechmont Ave, Cincinnati, OH 45230
+// February: Fabled Brew Works - 331 Kenton Lands Rd Suite 300, Erlanger, KY 41018
+// March: HighGrain Taproom & Kitchen - 6860 Plainfield Rd, Cincinnati, OH 45236
+// April: MadTree Parks & Rec + Event Spaces - 4321 Glendale Milford Rd, Blue Ash, OH 45242
+// May: Vinoklet Winery & Restaurant - 11069 Colerain Ave, Cincinnati, OH 45252
+// June: Braxton Brewing Company - 27 W 7th St, Covington, KY 41011
+// July: Fretboard Brewing (Factory 52) - 2750 Park Ave Suite O, Norwood, OH 45212
+// August: Dead Low Brewing - 5959 Kellogg Ave, Cincinnati, OH 45230
+// September: Braxton Brewing Company - 8901 US-42, Union, KY 41091
+// October: Hofbräuhaus - 200 3rd St, Newport, KY 41071
+
 export const events: Y2KEvent[] = [
   {
-    date: new Date("01/10/2025"),
-    time: "7PM",
-    locationName: "Big Ash Brewing",
-    address: "5230 Beechmont Ave, Cincinnati, OH 45230",
-    canceledReason: "[Canceled due to weather]",
-  },
-  {
-    date: new Date("01/24/2025"),
-    time: "7PM",
-    locationName: "Big Ash Brewing",
-    address: "5230 Beechmont Ave, Cincinnati, OH 45230",
-  },
-  {
-    date: new Date("02/14/2025"),
-    time: "7PM",
-    locationName: "Fabled Brew Works",
-    address: "331 Kenton Lands Rd Suite 300, Erlanger, KY 41018",
-  },
-  {
-    date: new Date("03/14/2025"),
-    time: "7PM",
-    locationName: "HighGrain Taproom & Kitchen",
-    address: "6860 Plainfield Rd, Cincinnati, OH 45236",
-    canceledReason: "[rescheduling to Sunday (03/16)]",
-  },
-  {
-    date: new Date("03/16/2025"),
-    time: "7PM",
-    locationName: "HighGrain Taproom & Kitchen",
-    address: "6860 Plainfield Rd, Cincinnati, OH 45236",
-  },
-  {
-    date: new Date("04/13/2025"),
-    time: "7PM",
-    locationName: "MadTree Parks & Rec + Event Spaces",
-    address: "4321 Glendale Milford Rd, Blue Ash, OH 45242",
-  },
-  {
-    date: new Date("05/09/2025"),
-    time: "7PM",
-    locationName: "Vinoklet Winery & Restaurant",
-    address: "11069 Colerain Ave, Cincinnati, OH 45252",
-  },
-  {
-    date: new Date("06/13/2025"),
+    date: new Date("01/16/2026"),
     time: "7PM",
     locationName: "Braxton Brewing Company",
     address: "27 W 7th St, Covington, KY 41011",
   },
   {
-    date: new Date("07/11/2025"),
-    time: "7PM",
-    locationName: "Fretboard Brewing (Factory 52)",
-    address: "2750 Park Ave Suite O, Norwood, OH 45212",
-  },
-  {
-    date: new Date("08/08/2025"),
-    time: "7PM",
-    locationName: "Dead Low Brewing",
-    address: "5959 Kellogg Ave, Cincinnati, OH 45230",
-  },
-  {
-    date: new Date("09/12/2025"),
-    locationName: "Braxton Brewing Company",
-    address: "8901 US-42, Union, KY 41091",
+    date: new Date("02/20/2026"),
     time: "7PM",
   },
   {
-    date: new Date("10/10/2025"),
-    time: "7PM",
-    locationName: "Hofbräuhaus",
-    address: "200 3rd St, Newport, KY 41071",
-  },
-  {
-    date: new Date("11/14/2025"),
+    date: new Date("03/13/2026"),
     time: "7PM",
   },
   {
-    date: new Date("12/12/2025"),
+    date: new Date("04/10/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("05/08/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("06/12/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("07/10/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("08/14/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("09/11/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("10/09/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("11/13/2026"),
+    time: "7PM",
+  },
+  {
+    date: new Date("12/11/2026"),
     time: "7PM",
   },
 ];

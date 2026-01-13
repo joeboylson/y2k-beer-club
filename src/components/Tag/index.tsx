@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { WithChildren } from "../../types";
 
 const StyledTag = styled("div")`
-  background-color: black;
+  background-color: var(--color-text);
   width: fit-content;
   border-radius: 100px;
   padding: 0 8px;
-  color: white;
+  color: var(--color-white);
   font-size: 12px;
   white-space: nowrap;
   font-family: "Azeret Mono", monospace;
